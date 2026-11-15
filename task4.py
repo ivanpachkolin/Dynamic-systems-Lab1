@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
+
 x0 = 0.4
 Ntr = 200
 N = 400
@@ -22,8 +23,8 @@ for r in r_list:
             S = S + math.log(abs(-2*r*x))
     lambda_list.append(S / N)
 
-lambda_list = np.array(lambda_list)
-
+    
+#r≈1.4
 plt.plot(r_list, lambda_list, label='λ(r)', color='orange', linewidth=1)
 
 plt.axhline(y=0, color='red', linestyle='--', linewidth=1.5)

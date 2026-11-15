@@ -18,9 +18,6 @@ for r in r_list:
         R.append(r)
         X.append(x)
 
-R = np.array(R)
-X = np.array(X)
-
 plt.scatter(R, X, s=0.5)
 
 plt.axvline(x=0.75, color='red', linestyle='--', linewidth=1.5)
